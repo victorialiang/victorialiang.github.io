@@ -1,0 +1,441 @@
+/* yellow: #FFCE00 */
+/* gray: #4A4A4A */
+/* light gray: #D8D8D8 */
+/*F2F2F2*/
+
+@font-face {
+	font-family: Frutiger-Roman;
+	src: url(fonts/FrutigerLTStd-Roman.otf);
+}
+
+@font-face {
+	font-family: Frutiger-Light;
+	src: url(fonts/FrutigerLTStd-Light.otf);
+}
+
+@font-face {
+	font-family: Frutiger-Bold;
+	src: url(fonts/FrutigerLTStd-Bold.otf);
+}
+
+@font-face {
+	font-family: Frutiger-Black;
+	src: url(fonts/FrutigerLTStd-Black.otf);
+}
+
+div {
+	/*font-family: Frutiger-Light;*/
+	 font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”,
+    “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+    sans-serif;
+/*    font-weight: lighter;
+*/}
+
+/*used for big intro header*/
+h1 {
+	font-size: 2.7em;
+	/*font-family: Frutiger-Bold;*/
+	margin: 2rem 0 1rem 0;
+	font-weight: bold;
+	/*color: gray;*/
+}
+
+/*used for titles and hover titles*/
+h2 {
+	/*font-family: Frutiger-Bold;*/
+	font-size: 2.3em;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+/*used for project section titles*/
+h3 {
+	font-size: 1.7em;
+	font-weight: bold;
+	margin-top: 1rem;
+
+}
+
+/*used for hover captions*/
+h4 {
+	font-size: 1.2em;
+	/*font-family: Frutiger-Roman;*/
+}
+
+/*used for small caps labels*/
+h5 {
+	margin-top: 3em;
+	font-size: 0.85em;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #F38378;
+
+}
+
+h5.dark {
+	color: black;
+}
+
+h5.center {
+	text-align: center;
+}
+
+p{
+	color: #4A4A4A;
+
+}
+
+/* NAV */
+
+a {
+	color: black;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+#nav {
+	padding-top: 15px;
+	font-weight: lighter;
+    font-size: 0.85em;
+
+}
+
+
+ul.nav {
+	list-style-type: none;
+    margin: 0;
+    /*padding: 100;*/
+
+}
+
+
+
+#logo {
+	float: left;
+	/*padding: 0;*/
+	/*vertical-align: top;*/
+
+}
+
+#logo img {
+	max-width: 60%;
+}
+
+
+li.nav {
+	display: inline;
+	float: right;
+	padding: 25px;
+	letter-spacing: 2px;
+	/*font-weight: 600;*/
+}
+
+/*ul:not {
+	list-style-type: circle;
+}*/
+
+/* WORK */
+
+p.caption {
+	margin-block-start: 0.5em;
+	margin-block-end: 2em;
+
+
+	font-size: 0.7em;
+}
+
+.project-section {
+	padding-bottom: 3em;
+	/*margin-bottom: 3em;*/
+}
+
+.content img{
+	width: 100%;
+	/*height: auto;*/
+
+}
+
+.row {
+	margin-bottom: 0;
+}
+
+
+
+#intro {
+	text-align: center;
+}
+
+#intro p {
+	margin-top: 8%;
+	margin-bottom: 5%
+}
+
+#intro em {
+	color: #FFCE00;
+	font-style: normal;
+
+}
+
+#work {
+	margin: auto;
+	padding-top: 2%;
+}
+
+.projects-grid {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+
+.project img {
+	flex-shrink: 0;
+	height: auto;
+	width: auto;
+	max-width: 550px;
+	max-height: 400px;
+	/*min-width: 100%;
+	min-height: 100%;*/
+	display: block;
+	object-fit: cover;
+	overflow: hidden;
+
+}
+.project {
+/*	max-width: 550px;
+	max-height: 400px;*/
+	max-width: 550px;
+	max-height: 400px;
+	/*background-color: gray;*/
+	/*display: inline-block;*/
+
+/*	flex-direction: row;
+*/	vertical-align: top;
+	margin: 1%;
+
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+
+	
+}
+
+
+.overlay {
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+     left: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     transition: .5s ease;
+     /*background-color: white;*/
+     background-color: #FFCE00;
+
+}
+
+.project:hover .overlay {
+  	 opacity: 1;
+}
+
+.text {
+	 /*color: black;*/
+	 /*font-size: 20px;*/
+	 position: absolute;
+	 top: 20%;
+  	 left: 15%;
+  	 right: 15%;
+  	/* -webkit-transform: translate(-50%, -50%);
+	 -ms-transform: translate(-50%, -50%);
+	 transform: translate(-50%, -50%);*/
+	 text-align: left;
+	 /*color: white;*/
+	 /*z-index: 99;*/
+}
+
+/* HOVER UNDERLINE COPYPASTA */
+.custom-underline {
+  position: relative;
+  display: inline-block;
+ /* font-size: 24px;
+  font-weight: 400;*/
+  text-align: center;
+}
+
+.custom-underline,
+.custom-underline:hover,
+.custom-underline:focus,
+.custom-underline:active {
+  /*color: #fff;*/
+  text-decoration: none;
+  /*font-weight: bold;*/
+
+}
+
+.custom-underline:hover {
+  font-weight: bold;
+
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+
+.link-container .custom-underline::after {
+  top: 100%;
+  height: 3px;
+  width: 0%;
+  left: 3%;
+  background-color: #FFCE00;
+    transition: 0.5s ease all .3s;
+}
+
+.link-container:hover .custom-underline::after {
+  font-weight: bold;
+  width: 90%;
+    transition: 0.3s ease all;
+
+}
+
+.link-container:hover {
+	font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer {
+	margin-top: 4%;
+	margin-bottom: 5%;
+	padding-top: 2%;
+	font-size: 0.85em;
+	color: gray;
+}
+
+.footer a {
+	color: gray;
+
+}
+
+.footer img{
+	display: block;
+	margin: auto;
+	text-align: center;
+	max-width: 7%;
+
+}
+
+.footer .row {
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+
+}
+
+#center{
+	text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid  #E5E5E5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0
+}
+
+.links{
+	float: right;
+
+}
+
+/* PROJECTS */
+.contain {
+	object-fit: contain;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* ANIMATION */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-11-26 14:29:32
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* BG COLORS */
+.gray {
+	background: #D8D8D8;
+	background: #F2F2F2;
+}
+
+.prototype {
+	margin:0;
+	padding: 0;
+	/*position: relative;*/
+	/*overflow: hidden;*/
+}
+iframe {
+	/*display: block;*/
+	/*position: absolute;
+	width: 100%;
+	height: 100%;*/
+	width: 716px;
+	height: 658px;
+	/*height: auto;*/
+}
+
