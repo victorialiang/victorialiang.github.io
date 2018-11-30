@@ -24,26 +24,21 @@
 }
 
 div {
-	/*font-family: Frutiger-Light;*/
 	 font-family: -apple-system, BlinkMacSystemFont,
     “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”,
     “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
     sans-serif;
-/*    font-weight: lighter;
-*/}
+}
 
 /*used for big intro header*/
 h1 {
 	font-size: 2.7em;
-	/*font-family: Frutiger-Bold;*/
 	margin: 2rem 0 1rem 0;
 	font-weight: bold;
-	/*color: gray;*/
 }
 
 /*used for titles and hover titles*/
 h2 {
-	/*font-family: Frutiger-Bold;*/
 	font-size: 2.3em;
 	font-weight: bold;
 	margin-top: 1rem;
@@ -60,7 +55,6 @@ h3 {
 /*used for hover captions*/
 h4 {
 	font-size: 1.2em;
-	/*font-family: Frutiger-Roman;*/
 }
 
 /*used for small caps labels*/
@@ -108,7 +102,6 @@ a:hover {
 ul.nav {
 	list-style-type: none;
     margin: 0;
-    /*padding: 100;*/
 
 }
 
@@ -116,8 +109,7 @@ ul.nav {
 
 #logo {
 	float: left;
-	/*padding: 0;*/
-	/*vertical-align: top;*/
+	
 
 }
 
@@ -131,12 +123,8 @@ li.nav {
 	float: right;
 	padding: 25px;
 	letter-spacing: 2px;
-	/*font-weight: 600;*/
 }
 
-/*ul:not {
-	list-style-type: circle;
-}*/
 
 /* WORK */
 
@@ -150,12 +138,10 @@ p.caption {
 
 .project-section {
 	padding-bottom: 3em;
-	/*margin-bottom: 3em;*/
 }
 
 .content img{
 	width: 100%;
-	/*height: auto;*/
 
 }
 
@@ -204,23 +190,18 @@ p.caption {
 	width: auto;
 	max-width: 550px;
 	max-height: 400px;
-	/*min-width: 100%;
-	min-height: 100%;*/
+
 	display: block;
 	object-fit: cover;
 	overflow: hidden;
 
 }
 .project {
-/*	max-width: 550px;
-	max-height: 400px;*/
+
 	max-width: 550px;
 	max-height: 400px;
-	/*background-color: gray;*/
-	/*display: inline-block;*/
-
-/*	flex-direction: row;
-*/	vertical-align: top;
+	
+	vertical-align: top;
 	margin: 1%;
 
 	display: flex;
@@ -245,7 +226,6 @@ p.caption {
      width: 100%;
      opacity: 0;
      transition: .5s ease;
-     /*background-color: white;*/
      background-color: #FFCE00;
 
 }
@@ -255,26 +235,21 @@ p.caption {
 }
 
 .text {
-	 /*color: black;*/
-	 /*font-size: 20px;*/
+	 
 	 position: absolute;
 	 top: 20%;
   	 left: 15%;
   	 right: 15%;
-  	/* -webkit-transform: translate(-50%, -50%);
-	 -ms-transform: translate(-50%, -50%);
-	 transform: translate(-50%, -50%);*/
+  	
 	 text-align: left;
-	 /*color: white;*/
-	 /*z-index: 99;*/
+	
 }
 
-/* HOVER UNDERLINE COPYPASTA */
+/* HOVER UNDERLINE */
 .custom-underline {
   position: relative;
   display: inline-block;
- /* font-size: 24px;
-  font-weight: 400;*/
+
   text-align: center;
 }
 
@@ -282,9 +257,7 @@ p.caption {
 .custom-underline:hover,
 .custom-underline:focus,
 .custom-underline:active {
-  /*color: #fff;*/
   text-decoration: none;
-  /*font-weight: bold;*/
 
 }
 
@@ -426,16 +399,11 @@ hr {
 .prototype {
 	margin:0;
 	padding: 0;
-	/*position: relative;*/
-	/*overflow: hidden;*/
+	
 }
 iframe {
-	/*display: block;*/
-	/*position: absolute;
-	width: 100%;
-	height: 100%;*/
+
 	width: 716px;
 	height: 658px;
-	/*height: auto;*/
 }
 
