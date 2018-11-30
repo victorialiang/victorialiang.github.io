@@ -3,6 +3,7 @@
     <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
 
@@ -25,12 +26,19 @@
     	<div class="col s1"></div>
     	<div class="col s10">
 	    	<div id="nav">
+          <div class="nav">
           <ul class=nav">
 	    		<li id="logo"><a href="index.html"><img src="assets/images/logo.png"></img></a></li>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="small material-icons">menu</i>
+          </a>
 	    		<li class="link-container nav"><a href="assets/documents/resume.pdf" class="custom-underline">RESUME</a></li>
 	    		<li class="link-container nav"><a href="about.html" class="custom-underline">ABOUT</a></li>
 	    		<li class="link-container nav"><a href="#" class="custom-underline">WORK</a></li>
+          
         </ul>
+      </div>
 	    	</div>
    		</div>
    		</div>
@@ -138,6 +146,18 @@
           
         });
       </script>
+
+      <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+      </script>
+
 
 
 
