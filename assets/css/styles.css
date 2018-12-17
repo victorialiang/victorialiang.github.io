@@ -2,6 +2,9 @@
 /* gray: #4A4A4A */
 /* light gray: #D8D8D8 */
 /*F2F2F2*/
+/*coral: #fa7e68; */
+/*orangey: fa9668*/
+
 
 @font-face {
 	font-family: Frutiger-Roman;
@@ -49,6 +52,7 @@ h3 {
 	font-size: 1.7em;
 	font-weight: bold;
 	margin-top: 1rem;
+	color: #5e5e5e;
 
 }
 
@@ -64,7 +68,7 @@ h5 {
 	text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
-    color: #F38378;
+    color: #fa7e68;
 
 }
 
@@ -78,6 +82,7 @@ h5.center {
 
 p{
 	color: #4A4A4A;
+	/*line-height: 1.3em;*/
 
 }
 
@@ -139,7 +144,8 @@ span.nav {
 }*/
 
 #logo a {
-	color: #FFCE00;
+	/*color: #FFCE00;*/
+	color: #fa7e68;
 }
 
 li.nav {
@@ -165,6 +171,10 @@ p.caption {
 	padding-bottom: 3em;
 }
 
+.content {
+	margin-top: 3%;
+}
+
 .content img{
 	width: 100%;
 
@@ -186,12 +196,16 @@ p.caption {
 
 #intro h1 {
 	/*font-weight: normal;*/
-	line-height: 1.3em;
+	line-height: 1.5em;
 }
 
 #intro h3 {
 	font-weight: normal;
-	line-height: 1.3em;
+	line-height: 1.4em;
+}
+
+#intro h4 {
+	line-height: 1.4em;
 }
 
 #intro p {
@@ -201,8 +215,9 @@ p.caption {
 }
 
 #intro em {
-	color: #FFCE00;
+	/*color: #FFCE00;*/
 	font-style: normal;
+	color: #fa7e68;
 
 }
 
@@ -261,6 +276,7 @@ p.caption {
 
 .overlay {
 	 position: absolute;
+	 /*position: fixed;*/
 	 top: 0;
 	 bottom: 0;
      left: 0;
@@ -269,7 +285,10 @@ p.caption {
      width: 100%;
      opacity: 0;
      transition: .5s ease;
-     background-color: #FFCE00;
+     /*background-color: #FFCE00;*/
+     	background-color: #fa9668;
+
+     text-align: center;
 
 }
 
@@ -280,11 +299,13 @@ p.caption {
 .text {
 	 
 	 position: absolute;
-	 top: 20%;
-  	 left: 15%;
-  	 right: 15%;
+	 top: 25%;
+  	 left: 25%;
+  	 /*right: 50%;*/
   	
-	 text-align: left;
+	 /*text-align: left;*/
+	 text-align: center;
+	 width: 50%;
 	
 }
 
@@ -320,7 +341,9 @@ p.caption {
   height: 3px;
   width: 0%;
   left: 3%;
-  background-color: #FFCE00;
+  /*background-color: #FFCE00;*/
+  	background-color: #fa7e68;
+
     transition: 0.5s ease all .3s;
 }
 
@@ -333,6 +356,25 @@ p.caption {
 
 .link-container:hover {
 	/*font-weight: bold;*/
+}
+
+/* PREV NEXT */
+
+.next {
+	text-align: right;
+}
+
+.prev {
+	text-align: left;
+}
+
+.align-text {
+	vertical-align: super;
+}
+
+.prev-next p {
+	/*text-align: left;*/
+	font-weight: normal;
 }
 
 /* FOOTER */
@@ -481,6 +523,14 @@ hr {
     height: 100%;
     border: 0;
 }
+
+/* SCROLLREVEAL */
+/*html.sr .row {
+    visibility: hidden;
+}*/
+/*html.sr .footer {
+    visibility: hidden;
+}*/
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 600px) {

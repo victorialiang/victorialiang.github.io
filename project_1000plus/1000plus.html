@@ -11,6 +11,7 @@
 
       <script src="../assets/js/jquery-3.3.1.js"></script>
       <script src="../assets/js/scripts.js" type="text/javascript"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
 
 
 
@@ -115,12 +116,42 @@
             </div>
           </div>
 
+          <div class="prev-next">
+          <div class="row">
+
+            <div class="col s2 offset-s1 prev">
+              <a href="../project_mosaicIllo/mosaicIllo.html">
+                <h5><i class="material-icons">arrow_back</i> <span class="align-text">Previous</span> </h5>
+                <h3>Mosaic Illustrations</h3> 
+                <p>Illustration Branding</p>
+              </a>
+            </div>
+
+           <!--  <div class="col s2 offset-s6 next">
+              <a href="../project_1000plus/1000plus.html">
+                <h5><span class="align-text">Next</span> <i class="material-icons">arrow_forward</i></h5>
+                <h3>1000Plus</h3> 
+                <p>Event Branding</p>
+              </a>
+            </div> -->
+          </div>
+         </div>
+
         </div>
     </div>
 
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="../assets/js/materialize.min.js"></script>
+
+      <script>
+        ScrollReveal().reveal('.row', {
+            delay: 500,
+            useDelay: 'onload',
+            interval: 400
+        });
+      </script>
+
     </body>
 
 
