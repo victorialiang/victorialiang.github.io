@@ -82,8 +82,12 @@ h5.center {
 
 p{
 	color: #4A4A4A;
-	/*line-height: 1.3em;*/
+	line-height: 1.7em;
 
+}
+
+ul {
+	list-style-type: disc;
 }
 
 /* NAV */
@@ -106,7 +110,7 @@ a:hover {
 }
 
 
-ul.nav {
+.nav ul {
 	list-style-type: none;
     margin: 0;
 
@@ -121,7 +125,12 @@ span.nav {
 }*/
 
 
-
+ul.browser-default {
+  padding-left: 40px;
+}
+ul.browser-default li {
+  list-style-type: inherit;
+}
 
 
 
@@ -171,7 +180,7 @@ p.caption {
 	padding-bottom: 3em;
 }
 
-.content {
+.about {
 	margin-top: 3%;
 }
 
@@ -367,15 +376,14 @@ p.caption {
 .prev {
 	text-align: left;
 }
-
 .align-text {
 	vertical-align: super;
 }
 
 .prev-next p {
-	/*text-align: left;*/
 	font-weight: normal;
 }
+
 
 /* FOOTER */
 
