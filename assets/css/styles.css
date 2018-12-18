@@ -533,9 +533,9 @@ hr {
 }
 
 /* SCROLLREVEAL */
-/*html.sr .row {
+html.sr .row {
     visibility: hidden;
-}*/
+}
 /*html.sr .footer {
     visibility: hidden;
 }*/
