@@ -38,6 +38,7 @@ h1 {
 	font-size: 2.7em;
 	margin: 2rem 0 1rem 0;
 	font-weight: bold;
+	/*color: black;*/
 }
 
 /*used for titles and hover titles*/
@@ -49,9 +50,10 @@ h2 {
 
 /*used for project section titles*/
 h3 {
-	font-size: 1.7em;
+	font-size: 1.5em;
 	font-weight: bold;
 	margin-top: 1rem;
+	/*color: black;*/
 	color: #5e5e5e;
 
 }
@@ -211,7 +213,7 @@ p.caption {
 
 #intro h3 {
 	font-weight: normal;
-	line-height: 1.4em;
+	line-height: 1.6em;
 }
 
 #intro h4 {
